@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" href="img/icon.png">
+  <link rel="icon" href="img/icon.png">
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Stella</title>
@@ -90,11 +90,14 @@ tw-passage {
 }
 
 /*==============Link==============*/
-tw-link{
-color: #ffe635;
-}
-.enchantment-link:hover{
+tw-link, .enchantment-link {
   color: #ffe635;
+  font-weight: normal;
+  text-decoration:none;
+  transition: color 0.2s ease-in-out
+}
+tw-link:hover, .enchantment-link:hover{
+  color: #f0db9c;
 }
 /*==============Images==============*/
 .img {
@@ -129,7 +132,7 @@ color: #ffe635;
   }  
   
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Moonbeam" color="purple"></tw-tag>,<tw-tag name="MoonbeamA" color="purple"></tw-tag>,<tw-tag name="Rizzle" color="red"></tw-tag>,<tw-tag name="Sniper" color="blue"></tw-tag>,<tw-tag name="Zinx" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="start" position="1400,100" size="100,100">&lt;img src=&quot;img/stellaStart.gif&quot; class=&quot;img&quot;/&gt;
-Stella
+(css: &quot;font-size: 250%&quot;)[STELLA]
 
 (link:&quot;Start&quot;)[(set: $name to (prompt: &quot;What is your name?&quot;, &quot;Zinx&quot;))(goto:&quot;C1&quot;)]
 (link:&quot;How to Play&quot;)[(goto: &quot;Tutorial&quot;)]
@@ -277,13 +280,13 @@ $name gave in and decided to head back to sleep. So, bringing Stella to their be
 
 Once rested, $name fed and washed Stella to get ready for a mini-adventure around Orion Nebula. ]\
 
-|3)[[[ Open your magic compass -&gt;C2.d]]]|2&gt;[(link: &quot;Agree&quot;)[(t8n:&quot;dissolve&quot;)(show: ?agree, ?3)(hide: ?1)(put: &quot;Courage&quot; into $personality)]]
-|1&gt;[(link: &quot;Disagree&quot;)[(t8n:&quot;dissolve&quot;)(show: ?disagree, ?3)(hide: ?2, ?part1)(put: &quot;Cautiousness&quot; into $personality)]]
+|3)[[[ Open your magic compass -&gt;C2.d]]]|2&gt;[(link: &quot;Agree&quot;)[(t8n:&quot;dissolve&quot;)(show: ?agree, ?3)(hide: ?1)(put: &quot;Level-headed and reasonable&quot; into $personality)]]
+|1&gt;[(link: &quot;Disagree&quot;)[(t8n:&quot;dissolve&quot;)(show: ?disagree, ?3)(hide: ?2, ?part1)(put: &quot;Warm and empathetic&quot; into $personality)]]
 
 
 </tw-passagedata><tw-passagedata pid="14" name="C2.d" tags="" position="1400,1525" size="100,100">(set: $diceroll to (random:1,4))
 &lt;img src=&quot;img/compass.png&quot; class=&quot;img&quot;/&gt;
-The magic compass has turned! (if: $diceroll is 1)[[[It&#39;s in Moonbeam&#39;s place. -&gt; C2.e]]](if: $diceroll is 2)[[[It&#39;s in Rizzle&#39;s place. -&gt; C2.f]]](if: $diceroll is 3)[[[It&#39;s in Sniper&#39;s place. -&gt; C2.g]] ](if: $diceroll is 4)[[[It&#39;s in $name place. -&gt; C2.h]]]</tw-passagedata><tw-passagedata pid="15" name=" C2.e" tags="Moonbeam" position="1175,1675" size="100,100">&lt;img src=&quot;img/ZeridianWildsA.gif&quot; class=&quot;img&quot;/&gt;
+The magic compass has turned! (if: $diceroll is 1)[[[It&#39;s in Moonbeam&#39;s place. -&gt; C2.e]]](if: $diceroll is 2)[[[It&#39;s in Rizzle&#39;s place. -&gt; C2.f]]](if: $diceroll is 3)[[[It&#39;s in Sniper&#39;s place. -&gt; C2.g]] ](if: $diceroll is 4)[[[It&#39;s in $name&#39;s place. -&gt; C2.h]]]</tw-passagedata><tw-passagedata pid="15" name=" C2.e" tags="Moonbeam" position="1175,1675" size="100,100">&lt;img src=&quot;img/ZeridianWildsA.gif&quot; class=&quot;img&quot;/&gt;
 Arriving at Moonbeam&#39;s home, Stelle curiously looked around the enchanted forest - human-sized mushrooms, fairies, and a handful of mystical doe and deer looking at Stelle.
 
 &quot;Welcome to Zeridian Wilds, where the moon shines brightly upon honoured guests like you, little Stel&quot; Moonbeam smiled gracefully as she glided towards $name and Stelle. 
@@ -309,9 +312,10 @@ $name and Rizzle laughed as Stella made a disgusted face on the bitter honey.
 
 $name and Stelle just deadpanned looked at Sniper as he tries to scare them with his menacing aura. &quot;Come on, I thought Stella would think I look cool that way&quot; he reasoned out. $name then said...
 
-|1&gt;[(link:&quot;Sorry, you look too cute to be scary.&quot;)[(hide:?2)(show:?3)&quot;Sorry, you look too cute to be scary.&quot; $name replied. &quot;Wow? Irrelevant. Let me now ask Stella, what do you think of me?&quot; he asked as he flocked his ombre wings together and stood up proudly. Stella just looked at the attractive feathers and started playing with his tail. &quot;Well, that&#39;s an answer.&quot;]]
+|q&gt;[What did you say?]
+|1&gt;[(link:&quot;Sorry, you look too cute to be scary.&quot;)[(hide:?2,?q)(show:?3)&quot;Sorry, you look too cute to be scary.&quot; $name replied. &quot;Wow? Irrelevant. Let me now ask Stella, what do you think of me?&quot; he asked as he flocked his ombre wings together and stood up proudly. Stella just looked at the attractive feathers and started playing with his tail. &quot;Well, that&#39;s an answer.&quot;]]
 \
-|2&gt;[(link:&quot;Practice makes perfect?&quot;)[(hide:?1)(show:?3)&quot;Good point. I shall now try again, but this time - it&#39;s on Stella.&quot; Sniper disappeared into the woods again for a few moments, until he popped out into Stella&#39;s face. &quot;Meow!&quot; Stella cried as she rushed towards Sniper and cuddled him, &quot;Now, I didn&#39;t expect that.&quot; ]]
+|2&gt;[(link:&quot;Practice makes perfect?&quot;)[(hide:?1,?q)(show:?3)&quot;Good point. I shall now try again, but this time - it&#39;s on Stella.&quot; Sniper disappeared into the woods again for a few moments, until he popped out into Stella&#39;s face. &quot;Meow!&quot; Stella cried as she rushed towards Sniper and cuddled him, &quot;Now, I didn&#39;t expect that.&quot; ]]
 
 |3)[&quot;Anyways, where would you want to go?&quot;
 
@@ -335,11 +339,10 @@ Until Stella accidentally pushed a troll to the cliffs.
 
 Before Moonbeam and $name rescue, Stella immediately meowed the largest bubble they have ever seen and it caught the scared troll. 
 [[ &gt;&gt;&gt; -&gt;B]]</tw-passagedata><tw-passagedata pid="20" name=" C1.ZWc" tags="MoonbeamA" position="950,1825" size="100,100">&lt;img src=&quot;img/moonbeam_place3.png&quot; class=&quot;img&quot;/&gt;
-Swim through the glowing waters
 
-&quot;How about we try letting Stella swim?&quot;
+&quot;How about we try letting Stella swim in the glowing waters?&quot;
 
-&quot;Great idea, $name! For sure Stella would love to see fishes around.&quot; Moonbeam gleefully replied. &quot;Come, hop on and hold tight&quot; ushering $name and Stella to prepare for a flight to the Kumikinang Lake. 
+&quot;Great idea, $name! For sure Stella would love to see water friends around.&quot; Moonbeam gleefully replied. &quot;Come, hop on and hold tight&quot; ushering $name and Stella to prepare for a flight to the Kumikinang Lake. 
 
 Once they have arrived, Moonbeam jumped into the bioluminescent lake, attracting all the dolphins and axolotls. 
 
@@ -438,12 +441,14 @@ DEDICATED to those who yearn for cats
 ART + PROGRAMMING + STORY by Amanda Patricia Viray
 Bachelor of Information Technology (Interactive Media)
 
+Huge thanks to my FRIENDS who tested Stella in a few hours!
+(click:&quot;FRIENDS&quot;)[( Bel, Ben, Dan, Maemae [omg, your 13 pages of feedback], and Elmo &lt;3 )]
 &lt;a href=&quot;https://twitter.com/amazellia&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; | &lt;a href=&quot;https://www.instagram.com/_amazellia/&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt; | &lt;a href=&quot;https://amazellia.tumblr.com/&quot;&gt;&lt;i class=&quot;fab fa-tumblr&quot;&gt;&lt;/i&gt;&lt;/a&gt; | &lt;a href=&quot;https://apdv.dev&quot;&gt;&lt;i class=&quot;fas fa-pencil-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 
 (click:&quot;ART&quot;)[ art: aesprite]
 (click:&quot;PROGRAMMING&quot;)[programming: twine + harlowe 3.2.2]
 (click:&quot;STORY&quot;)[ I //&#39;&#39;really&#39;&#39;// want a cat - Amanda, 2021]
-(click:&quot;DEDICATED&quot;)[inspo: I love cats (and dogs) ever since I was young, but because of my harsh allergies, I could never really get one. So, I decided to create interactive storytelling about taking care of a cat, especially using my creative freedom in adding fantastical, spacey elements that I love. Shoutout to all my allergic-to-pets gang, a toast to programming creativity.]	
+(click:&quot;DEDICATED&quot;)[Inspiration: I love cats (and dogs) ever since I was young, but because of my harsh allergies, I could never really get one. So, I decided to create interactive storytelling about taking care of a cat, especially using my creative freedom in adding fantastical, spacey elements that I love. Shoutout to all my allergic-to-pets gang, a toast to programming creativity.]	
 
 (link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;End&quot;)]</tw-passagedata><tw-passagedata pid="36" name="C1.1" tags="" position="1300,250" size="100,100">&lt;img src=&quot;img/blackhole.gif&quot; class=&quot;img&quot;/&gt;
 Every day, $name and the guardians would defend the black-holes and wormholes from destroying baby stars. 
@@ -541,7 +546,7 @@ Everyone anticipated Moonbeam&#39;s response - sweatdrops were dripping, feather
 
 (link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C1.k&quot;)]</tw-passagedata><tw-passagedata pid="48" name="C1.5" tags="" position="1400,375" size="100,100">(if: $morale is &quot;WISDOM&quot;)[&lt;img src=&quot;img/wisdom.gif&quot; class=&quot;img&quot;&gt;//Harmony and grace are necessary to create equilibrium in leading the guardians. Without the crystal of wisdom, the nebula would descend into chaos.//]\
 (else-if: $morale is &quot;HOPE&quot;)[&lt;img src=&quot;img/hope.gif&quot; class=&quot;img&quot;&gt;//The nebula needs $name to charge with confident optimism and tenacity. Without the crystal of hope, the nebula would descend into chaos.//]\
-(else-if: $morale is &quot;LOVE&quot;)[&lt;img src=&quot;img/love.gif&quot; class=&quot;img&quot;&gt;//It takes patience and kindness to become the leader of the guardians . Without the crystal of love, the nebula would descend into chaos.//]\
+(else-if: $morale is &quot;LOVE&quot;)[&lt;img src=&quot;img/love.gif&quot; class=&quot;img&quot;&gt;//It takes patience and kindness to become the leader of the guardians. Without the crystal of love, the nebula would descend into chaos.//]\
 
 
 Is this your crystal?
@@ -575,6 +580,7 @@ Press &gt;&gt;&gt; to go for the next page
 
 Some pages might not have &lt;&lt;&lt; , so choose your choices carefully!
 
+(By the way, look out for some hand-drawn cat memes!)
 
 (link:&quot;Let&#39;s read!&quot;)[(set: $name to (prompt: &quot;What is your name?&quot;, &quot;Zinx&quot;))(goto:&quot;C1&quot;)]
 
