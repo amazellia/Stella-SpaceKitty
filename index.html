@@ -127,13 +127,13 @@ color: #ffe635;
 	  width: 100%;
   }  
   
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Moonbeam" color="purple"></tw-tag>,<tw-tag name="MoonbeamA" color="purple"></tw-tag>,<tw-tag name="Rizzle" color="red"></tw-tag>,<tw-tag name="Sniper" color="blue"></tw-tag>,<tw-tag name="Zinx" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="start" position="101.66666666666667,101.66666666666667" size="100,100">&lt;img src=&quot;img/stellaStart.gif&quot; class=&quot;img&quot;/&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Moonbeam" color="purple"></tw-tag>,<tw-tag name="MoonbeamA" color="purple"></tw-tag>,<tw-tag name="Rizzle" color="red"></tw-tag>,<tw-tag name="Sniper" color="blue"></tw-tag>,<tw-tag name="Zinx" color="yellow"></tw-tag><tw-passagedata pid="1" name="Start" tags="start" position="101,101" size="100,100">&lt;img src=&quot;img/stellaStart.gif&quot; class=&quot;img&quot;/&gt;
 Stella
 
 (link:&quot;Start&quot;)[(set: $name to (prompt: &quot;What is your name?&quot;, &quot;Zinx&quot;))(goto:&quot;C1&quot;)]
 (link:&quot;How to Play&quot;)[(goto: &quot;Tutorial&quot;)]
 
-^^Play in fullscreen for best immersion^^</tw-passagedata><tw-passagedata pid="2" name="C1" tags="" position="225,100" size="100,100">&lt;img src=&quot;img/orion_nebula_open.gif&quot; class=&quot;img&quot;/&gt;
+^^Play in fullscreen for best immersion^^</tw-passagedata><tw-passagedata pid="2" name="C1" tags="" position="225,98" size="100,100">&lt;img src=&quot;img/orion_nebula_open.gif&quot; class=&quot;img&quot;/&gt;
 Once upon a time, there lived four ethereal guardians in the Orion Nebula, where they protect the star sanctuary. 
 
 (link:  &quot;&gt;&gt;&gt;&quot;)[(goto: &quot;C1.1&quot;)]</tw-passagedata><tw-passagedata pid="3" name="C1.a" tags="" position="975,100" size="100,100">&lt;img src=&quot;img/lightblast.gif&quot; class=&quot;img&quot;/&gt;
@@ -188,7 +188,8 @@ $name found a dazzling swirl of clouds nearby. &quot;Stand your guard.&quot; Moo
 
 (link-goto:&quot;&gt;&gt;&gt;&quot;,&quot;C1.g&quot;)
 
-(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C1.b&quot;)]</tw-passagedata><tw-passagedata pid="9" name="C1.g" tags="" position="1350,250" size="100,100">$name signalled everyone to surround the mysterious source.
+(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C1.b&quot;)]</tw-passagedata><tw-passagedata pid="9" name="C1.g" tags="" position="1350,250" size="100,100">&lt;img src=&quot;img/AbelnyxHollows.png&quot; class=&quot;img&quot;&gt;
+$name signalled everyone to surround the mysterious source.
 
 (link:&quot;&gt;&gt;&gt;&quot;)[(goto:&quot;C1.h&quot;)]
 (link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.f&quot;)</tw-passagedata><tw-passagedata pid="10" name=" C2" tags="" position="1250,475" size="100,100">A few days has gone by and Stella is finally able to walk on her own and grow her iridescent eyes!
@@ -281,7 +282,7 @@ Once rested, $name fed and washed Stella to get ready for a mini-adventure aroun
 
 </tw-passagedata><tw-passagedata pid="14" name="C2.d" tags="" position="1250,875" size="100,100">(set: $diceroll to (random:1,4))
 &lt;img src=&quot;img/compass.png&quot; class=&quot;img&quot;/&gt;
-The magic compass has turned! (if: $diceroll is 1)[[[It&#39;s in Moonbeam&#39;s place. -&gt; C2.e]]](if: $diceroll is 2)[[[It&#39;s in Rizzle&#39;s place. -&gt; C2.f]]](if: $diceroll is 3)[[[It&#39;s in Sniper&#39;s place. -&gt; C2.g]] ](if: $diceroll is 4)[[[It&#39;s in $name place. -&gt; C2.h]]]</tw-passagedata><tw-passagedata pid="15" name=" C2.e" tags="Moonbeam" position="1025,1025" size="100,100">&lt;img src=&quot;img/ZeridianWilds.png&quot; class=&quot;img&quot;/&gt;
+The magic compass has turned! (if: $diceroll is 1)[[[It&#39;s in Moonbeam&#39;s place. -&gt; C2.e]]](if: $diceroll is 2)[[[It&#39;s in Rizzle&#39;s place. -&gt; C2.f]]](if: $diceroll is 3)[[[It&#39;s in Sniper&#39;s place. -&gt; C2.g]] ](if: $diceroll is 4)[[[It&#39;s in $name place. -&gt; C2.h]]]</tw-passagedata><tw-passagedata pid="15" name=" C2.e" tags="Moonbeam" position="1025,1025" size="100,100">&lt;img src=&quot;img/ZeridianWildsA.gif&quot; class=&quot;img&quot;/&gt;
 Arriving to Moonbeam&#39;s home, Stelle curiously looked around the enchanted forest - human-sized mushrooms, fairies, and a handful of mystical doe and deer looking at Stelle.
 
 &quot;Welcome to Zeridian Wilds, where the moon shines brightly upon honoured guests like you, little Stel&quot; Moonbeam smiled gracefully as she glided towards $name and Stelle. 
@@ -291,7 +292,7 @@ Arriving to Moonbeam&#39;s home, Stelle curiously looked around the enchanted fo
  [[Jump on the giant mushrooms -&gt; C1.ZWb]] 
  [[Swim through the glowing waters -&gt; C1.ZWc]]
  
-(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C2.d&quot;)]</tw-passagedata><tw-passagedata pid="16" name=" C2.f" tags="Rizzle" position="1175,1025" size="100,100">&lt;img src=&quot;img/OvergaardSkylands.png&quot; class=&quot;img&quot;/&gt;
+(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C2.d&quot;)]</tw-passagedata><tw-passagedata pid="16" name=" C2.f" tags="Rizzle" position="1185,1026.6666666666665" size="100,100">&lt;img src=&quot;img/OvergaardSkylandsA.gif&quot; class=&quot;img&quot;/&gt;
 &quot;Wassup, boss and Stella!&quot; &quot;Welcome to the land of honeylit sunshine!- No, Stella, wait, don&#39;t drink the honey yet, its still unprocessed!&quot; 
 
 $name and Rizzle laughed as Stella made a disgusted face on the bitter honey. 
@@ -302,7 +303,7 @@ $name and Rizzle laughed as Stella made a disgusted face on the bitter honey.
 [[Try Honeydust with elephants -&gt; C2.OSb]]
 [[Catch bunnies -&gt; C2.OSc]]
 
-(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C2.d&quot;)]</tw-passagedata><tw-passagedata pid="17" name=" C2.g" tags="Sniper" position="1350,1025" size="100,100">&lt;img src=&quot;img/FrostForthFalls.png&quot; class=&quot;img&quot;/&gt;
+(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C2.d&quot;)]</tw-passagedata><tw-passagedata pid="17" name=" C2.g" tags="Sniper" position="1350,1025" size="100,100">&lt;img src=&quot;img/FrostForthFallsA.gif&quot; class=&quot;img&quot;/&gt;
 &quot;Greetings, younglings&quot; Sniper said as he moved out from the shadows of dawn.
 
 $name and Stelle just deadpanned looked at Sniper as he tries to scare them with his menancing aura. &quot;Come on, I thought Stella would think I look cool that way&quot; he reasoned out. $name then said...
@@ -377,7 +378,8 @@ While $name, Sniper, and Stelle are hiking, a large, dangerous hyenas came out o
 
 $name was about to use defend until all of a sudden, Stella rawred like a lion - scaring the hyenas away!
 
-[[ &gt;&gt;&gt; -&gt; A]]</tw-passagedata><tw-passagedata pid="27" name=" C2.h" tags="Zinx" position="1475,1025" size="100,100">$name and Stella went back inside, with not much to do at home, you decided it would be great for Stella to meet the two stars at the sactuary next to your home. Out of the activities you thought of, you picked...
+[[ &gt;&gt;&gt; -&gt; A]]</tw-passagedata><tw-passagedata pid="27" name=" C2.h" tags="Zinx" position="1475,1025" size="100,100">&lt;img src=&quot;img/orion_nebula_close.gif&quot; class=&quot;img&quot;/&gt;
+$name and Stella went back inside, with not much to do at home, you decided it would be great for Stella to meet the two stars at the sactuary next to your home. Out of the activities you thought of, you picked...
 
 [[Hide-and-Seek -&gt; C2.Pa]]
 [[Treeclimbing -&gt; C2.Pb]]
@@ -479,7 +481,8 @@ What is your crystal?
 But what they did not expect is to find a tiny, iridescent star.
 
 (link:&quot;&gt;&gt;&gt;&quot;)[(goto:&quot;C1.i&quot;)]
-(link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.g&quot;)</tw-passagedata><tw-passagedata pid="41" name="C1.i" tags="" position="1600,250" size="100,100">Moving closer, the star started blooming. Everyone stood in awe.
+(link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.g&quot;)</tw-passagedata><tw-passagedata pid="41" name="C1.i" tags="" position="1600,250" size="100,100">&lt;img src=&quot;img/stellastar.gif&quot; class=&quot;img&quot;&gt;
+Moving closer, the star started blooming. Everyone stood in awe.
 
 (link:&quot;&gt;&gt;&gt;&quot;)[(goto:&quot;C1.j&quot;)]
 (link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.h&quot;)</tw-passagedata><tw-passagedata pid="42" name="C1.j" tags="" position="1725,250" size="100,100">&lt;img src=&quot;img/stella_notcri.png&quot; class=&quot;img&quot;&gt;
@@ -494,14 +497,14 @@ It seemed that it started to cry! Quickly, ...
 (if: $C1_n is true)[](else:)[(link-goto:&quot;Ask your friends&quot;,&quot;C1.n&quot;)]
 (if: $C1_m is true)[](else:)[(link-goto:&quot;Shush the kitty&quot;,&quot;C1.m&quot;)]
 (link: &quot;Make a bubble&quot;)[(goto:&quot;C1.l&quot;)]
-(link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.j&quot;)</tw-passagedata><tw-passagedata pid="44" name="C1.l" tags="" position="2200,250" size="100,100">&lt;img src=&quot;img/bubbleStella.png&quot; class=&quot;img&quot;/&gt;
+(link-goto:&quot;&lt;&lt;&lt;&quot;, &quot;C1.j&quot;)</tw-passagedata><tw-passagedata pid="44" name="C1.l" tags="" position="2220,250" size="100,100">&lt;img src=&quot;img/bubbleStella.png&quot; class=&quot;img&quot;/&gt;
 Bubble added! 
 
 The kitty started to calm down and breathed better, joyfully meowing as it nuzzles to $name&#39;s warm hands. 
 (if: $morale is &quot;WISDOM&quot;)[With $name&#39;s wisdom, a connection was bestowed between $name and Stella to bring balance and lead with grace together! ]\
 (if: $morale is &quot;HOPE&quot;)[With $name&#39;s hope, a surge of joy and determination filled $name and Stella to charge forward together!]\
 (if: $morale is &quot;LOVE&quot;)[With $name&#39;s love, an overwhelming warmth has flown between $name and Stella to spread kindness and love together!]
-(link-goto:&quot;&gt;&gt;&gt;&quot;,&quot;C2 Intro&quot;)</tw-passagedata><tw-passagedata pid="45" name="C1.m" tags="" position="2000,250" size="100,100">(set: $C1_m to true)
+(link-goto:&quot;&gt;&gt;&gt;&quot;,&quot;C2 Intro&quot;)</tw-passagedata><tw-passagedata pid="45" name="C1.m" tags="" position="1980,250" size="100,100">(set: $C1_m to true)
 
 &quot;Shhhh, its okay Kitty&quot; $name
  said as $name
@@ -511,7 +514,7 @@ The kitty started to calm down and breathed better, joyfully meowing as it nuzzl
 (if: $C1_n is true)[](else:)[(link-goto:&quot;I should try asking my friends&quot;,&quot;C1.n&quot;)]
 (link:&quot;Blow a bubble for kitty&quot;)[(goto:&quot;C1.l&quot;)]
 
-(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C1.k&quot;)]</tw-passagedata><tw-passagedata pid="46" name="C2 Intro" tags="" position="1250,375" size="100,100">A miracle it was to get a newborn star.
+(link:&quot;&lt;&lt;&lt;&quot;)[(goto:&quot;C1.k&quot;)]</tw-passagedata><tw-passagedata pid="46" name="C2 Intro" tags="" position="1255,370" size="100,100">A miracle it was to get a newborn star.
 
 (click:&quot;newborn star&quot;)[(It takes thousands of years before a baby star is created!)]
 
@@ -523,7 +526,9 @@ Moonbeam shaked her head while $name is preoccupied with  feeding milky-way baby
 
 In the end, everyone agreed on Stella because she immediately perked her ears up and meowed enthusiastically when Moonbeam said the name from her list of suggestions.)]
 
-(link-goto: &quot;&gt;&gt;&gt;&quot;,&quot; C2&quot;)</tw-passagedata><tw-passagedata pid="47" name="C1.n" tags="" position="2100,250" size="100,100">(set: $C1_n to true)
+(link-goto: &quot;&gt;&gt;&gt;&quot;,&quot; C2&quot;)
+
+(link-goto: &quot;&lt;&lt;&lt;&quot;,&quot; C1.l&quot;)</tw-passagedata><tw-passagedata pid="47" name="C1.n" tags="" position="2100,250" size="100,100">(set: $C1_n to true)
 
 &quot;Uhh, don&#39;t you realise that this...//thing// is new to us?&quot; Rizzle pointed put as the kitty kept on crying. &quot;Who about you, Moonbeam? Pretty sure you&#39;re more older than any of us.&quot;
 
